@@ -146,8 +146,8 @@ def console_report(result):
 
 def swiftbar_report(result):
     first = result["windows"][0]
-    icon, color = arrow(first["pace"]["delta"] if first["pace"] else None)
-    lines = [f"{icon} {first['pct']:g}%" + (f" | color={color}" if color else ""), "---"]
+    _, color = arrow(first["pace"]["delta"] if first["pace"] else None)
+    lines = [f"{first['pct']:g}%" + (f" | color={color}" if color else ""), "---"]
     plan = f" ({result['plan_type']})" if result["plan_type"] else ""
     lines.append(f"Codex subscription{plan} | size=13")
     for window in result["windows"]:

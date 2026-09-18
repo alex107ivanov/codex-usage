@@ -34,9 +34,9 @@ open -a SwiftBar
 
 The plugin refreshes every five minutes.
 
-- green `▼`: usage is more than 3 points under pace
-- plain `●`: within 3 points of pace
-- red `▲`: ahead of pace
+- green: usage is more than 3 points under pace
+- default color: within 3 points of pace
+- red: ahead of pace
 - orange `⚠︎`: Codex is not signed in or the request failed
 
 The tray uses the primary limit. Its menu includes every returned window,
